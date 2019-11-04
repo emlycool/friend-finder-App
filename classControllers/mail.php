@@ -11,7 +11,7 @@ function firemail($email, $url )
     $mail->SMTPSecure='tls';
 
     $mail->Username='alisataylorm.m@gmail.com';
-    $mail->Password='alisa1074';
+    $mail->Password='Alisa-1111';
 
     $mail->setFrom('alisataylorm.m@gmail.com','Friend Finder');
     $mail->addAddress($email);
