@@ -15,7 +15,7 @@ define('database', 'heR17wKBNs');
 // define('password2', '');
 // define('database2', 'commerce');
 define('server2', 'remotemysql.com');
-define('username2', 'VeYKTw7cPi ');
-define('password2', 'YyZtc5rdQ5');
-define('database2', 'VeYKTw7cPi ');
+define('username2', 'VeYKTw7cPi');
+define('password2', 'MsE6GOmpi1');
+define('database2', 'VeYKTw7cPi');
 ?>
