@@ -62,10 +62,13 @@ $(document).ready(function () {
                             button: false,
                         });
                         // setTimeout(function() {
-                        //   location.assign("login.php");
+                        //     location.assign("index.php#login");
                         // }, 1000);
                         $("#register-btn").html('Register Now');
-                        $("#login_form").focus();
+                        $("#alert-div").fadeIn(1000, function () {
+                            $('#alert-div').html(data.message);
+                        });
+                        //$("#login_form").focus();
                     }
                 }
             })

@@ -1,4 +1,5 @@
 <?php
+session_start();
 //require_once '../classControllers/db.php';
 require_once '../classControllers/init.php';
 $database = new db;
@@ -48,7 +49,8 @@ if ($_POST['firstname']) {
         if($user->postUser()){
             $url = "/pages/activate.php?token=\$user->token&email=\$user->email";
             firemail($user->email, $url);
-            $data['message'] = "<div class=\"alert alert-warning\">Registration Successful kindly check your mail to activate your account.</div>";
+            $data['message'] = "<div class=\"alert alert-success\">Registration Successful kindly check your mail to activate your account.</div>";
+            //$_SESSION['success'] = $data['message'];
             
         }
         else{

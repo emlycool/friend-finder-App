@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -494,8 +497,9 @@
                   <div class="row">
                     <div class="form-group col-xs-12">
                       <!-- <?php
-                            if (isset($_GET['message'])) {
-                              echo "<button class='btn btn-danger disabled' >" . $_GET['message'] . "</button>";
+                            if (isset($_SESSION['success'])) {
+                              echo $_SESSION['success'];
+                              unset($_SESSION['success']);
                             }
                             ?> -->
                       <label for="my-email" class="sr-only">Email</label>
