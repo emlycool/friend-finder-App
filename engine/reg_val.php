@@ -47,9 +47,9 @@ if ($_POST['firstname']) {
         $user->date_added = date("Y-m-d H:i:s");
         //$user->date_addded = time();
         if($user->postUser()){
-            $url = "/pages/activate.php?token=\$user->token&email=\$user->email";
+            $url = "https://moshmanfriendfinder.herokuapp.com/pages/confirm.php?token=\$user->token&email=\$user->email";
             firemail($user->email, $url);
-            $data['message'] = "<div class=\"alert alert-success\">Registration Successful kindly check your mail to activate your account.</div>";
+            $data['message'] = "<div class=\"alert alert-success\">Registration Successful kindly check your mail to confirm your account.</div>";
             //$_SESSION['success'] = $data['message'];
             
         }

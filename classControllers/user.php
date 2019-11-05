@@ -86,7 +86,34 @@ class User
         }
 
     }
-    
+    public static function activate($email,$token){
+        global $database;
+        $res = $database->query("SELECT * FROM users WHERE email = '$email' LIMIT 1");
+        if ($database->rowsAffected() == 1) {
+            $result_array = $database->fetch_array($res);
+            if ($result_array['verified'] == 1) {
+                $_SESSION['success'] = "Account is already verified!, proceed to login.";
+                header("location:../index.php#login");
+                die;
+            }
+            else{
+                if ($token == $result_array['token']) {
+                    $confirm = $database->query("UPDATE `users` SET status = 1 WHERE id = {$result_array['id']}");
+                    self::$verified = 1;
+                    if ($confirm) {
+                        $_SESSION['success'] = "Account verified, proceed to login";
+                        header("location:../index.php#login");
+                        die;
+                    }
+                    
+                }
+                else{
+                    echo "link expired";
+                }
+            }
+        }
+        
+    }
 }
 
 ?>

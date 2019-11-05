@@ -56,10 +56,10 @@ $(document).ready(function () {
                         $('#email-vd, #password-vd, #firstname-vd, #lastname-vd, #city-vd, #country-vd,#alert-div').html('');
                         $("#register-btn").html('Signing Up ...');
                         swal({
-                            text: "Registration Successful",
+                            text: "Registration Successful kindly check your mail to confirm your account.",
                             icon: "success",
-                            timer: 1000,
-                            button: false,
+                            //timer: 1000,
+                            button: true,
                         });
                         // setTimeout(function() {
                         //     location.assign("index.php#login");
