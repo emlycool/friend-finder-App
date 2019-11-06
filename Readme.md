@@ -1,5 +1,6 @@
-#Readme
-#Friend-finder-App
+![Friend-finder logo](https://res.cloudinary.com/dsuxbd237/image/upload/v1572733650/Friend%20finder/logo-black_hudma8.png)
+### Readme
+### Friend-finder-App
 In this website we have three sections for the user to : 1. Blog
  2. Social media
  3. Ecommerce
