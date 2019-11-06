@@ -1,6 +1,7 @@
 ![Friend-finder logo](https://res.cloudinary.com/dsuxbd237/image/upload/v1572733650/Friend%20finder/logo-black_hudma8.png)
 ### Readme
 ### Friend-finder-App
+### testing site https://moshmanfriendfinder.herokuapp.com/
 In this website we have three sections for the user to : 1. Blog
  2. Social media
  3. Ecommerce
@@ -11,5 +12,5 @@ In this website we have three sections for the user to : 1. Blog
    3. Bootstrap 
    4. Fonts and icons 
    5. Js 
-   6. And php codes(in the folder named engine and processes). For easy use: The database has been spilt into two test_project and commerce.sql for  blog, social media and ecommerce respectively. Kindly edit the database.php in the engine folder to your own server connection. 
+   6. And php codes(in the folder named engine and classController). For easy use: The database has been spilt into two test_project and commerce.sql for  blog, social media and ecommerce respectively. Kindly edit the database.php in the engine folder to your own server connection. 
 Link to Admin : the_project/admin/
