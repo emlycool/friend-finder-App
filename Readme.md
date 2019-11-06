@@ -1,4 +1,5 @@
-Readme
+#Readme
+#Friend-finder-App
 In this website we have three sections for the user to : 1. Blog
  2. Social media
  3. Ecommerce
